@@ -46,7 +46,7 @@ public class DataBaseConfig {
         LocalContainerEntityManagerFactoryBean factoryBean
                 = new LocalContainerEntityManagerFactoryBean();
         factoryBean.setDataSource(getDataSource());
-        factoryBean.setPackagesToScan("web.web.model");
+        factoryBean.setPackagesToScan("web.model");
 
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         factoryBean.setJpaVendorAdapter(vendorAdapter);
